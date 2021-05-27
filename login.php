@@ -72,7 +72,7 @@ form p{
                         }
                     }
                 ?>  
-                <button type="submit">Ingresar</button>
+                <button type="submit">Ingresa!</button>
             </form>
             <form action="register.php" method="POST">
                 <button type="submit">Registrate</button>
