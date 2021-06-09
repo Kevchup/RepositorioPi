@@ -183,6 +183,11 @@ history.forward()
 			            '<p><h3>E-MAIL:</h3> '+data.datos[i].email+'</p>'+
 			        '</div>'+
 			        '<a href="#" class="btn-close-popup">X</a>'+
+					'<div class="container-boton">'+
+						'<a href="https://wa.me/+57'+data.datos[i].telefono+'?text="" target="_blank">'+
+						'<img class="boton" src="imagenes/produc/icono.png" alt="">'+
+						'</a>'+
+      					'</div>'+
 			        '</div>'; 
                     
                 }
