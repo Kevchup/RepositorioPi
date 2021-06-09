@@ -180,7 +180,7 @@ history.forward()
 			            '<h1>DATOS DE CONTACTO</h1><br>'+
 			            '<p><h3>NOMBRE:</h3> '+data.datos[i].nombre+ ' ' +data.datos[i].apellido+'</p>'+
 			            '<p><h3>TELEFONO:</h3> '+data.datos[i].telefono+'</p>'+
-			            '<p><h3>EMAIL:</h3> '+data.datos[i].email+'</p>'+
+			            '<p><h3>E-MAIL:</h3> '+data.datos[i].email+'</p>'+
 			        '</div>'+
 			        '<a href="#" class="btn-close-popup">X</a>'+
 					'<div class="container-boton">'+
