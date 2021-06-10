@@ -12,7 +12,6 @@ $imagen='../imagenes/produc';
 $imagen=$imagen."/".$nombreimg;
 move_uploaded_file($archivo,$imagen);
 
-
 $sql="INSERT INTO producto(ID_P,titulo,descrip,imagen,cantidad,fecha) VALUES ('$ID_P','$titulo','$descrip','$imagen','$cantidad','$fecha')";
 $result=mysqli_query($con,$sql);
 if(!$result){

@@ -62,9 +62,9 @@ form p{
                 <input type="text" name="ID_P" placeholder="Cedula" pattern="[0-9]{6,10}" title="La cedula debe ser solo números y tener una longitud máxima de 10 caracteres" required>
                 <input type="text" name="nombre" placeholder="Nombres" pattern="[a-zA-Z- ]{1,50}" title="En el nombre solo debe poner letras y tener una longitud máxima de 50 caracteres" required>
                 <input type="text" name="apellido" placeholder="Apellidos" pattern="[a-zA-Z- ]{1,50}" title="En el apellido solo debe poner letras y tener una longitud máxima de 50 caracteres" required>
-                <input type="text" name="telefono" placeholder="Teléfono">
-                <input type="text" name="email" placeholder="Email">
-                <input type="text" name="contraseña" placeholder="Contraseña">
+                <input type="text" name="telefono" placeholder="Teléfono" pattern="[0-9]{6,10}" title="El teléfono debe ser solo números y tener una longitud máxima de 10 caracteres" required>
+                <input type="text" name="email" placeholder="Email" pattern="{1,20}" title="En el Email solo debe poner letras y tener una longitud máxima de 20 caracteres" required>
+                <input type="text" name="contraseña" placeholder="Contraseña" pattern="[a-zA-Z-0-9]{6,12}" title="La contraseña debe tener un minimo de 6 caracteres y un máximo de 12" required>
                 Tipo De Usuario  <select id="tipo"  name="tipo">
                     <option value="Productor">Productor </option>
                     <option value="Cliente">Cliente </option>

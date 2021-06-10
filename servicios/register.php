@@ -17,5 +17,5 @@ if($result == 1){
     header('location: ../login.php');
     echo "Si se registro";
 }else{
-    echo "No se registró";
+    echo "<script>alert('La cedula ya se encuentra registrada');</script>";
 }
