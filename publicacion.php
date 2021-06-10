@@ -67,36 +67,7 @@ form p{
 </style>
 </head>
 <body>
-	<header>
-		<div class="logo-place"><a href="index.php"><img src="imagenes/gbtranding.png"></a></div>
-		<div class="search-place">
-			<input type="text" id="idbusqueda" placeholder="Encuentra todo lo que necesitas...">
-			<button class="btn-main btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
-		</div>
-		<div class="options-place">
-		<?php
-		if(isset($_SESSION['ID_P'])){
-			
-			echo 
-			'<div class="item-option" ><a href="publicacion.php">
-			<i class="fa fa-user-circle-o" aria-hidden="true"></i>
-			<p>'.$_SESSION['nombre'].'</a></p>
-			</div>
-			<div class="item-option" title="CERRAR SESION"><a href="login.php">
-			<i class="fa fa-sign-out" aria-hidden="true"></i></a></div>
-			';
-            
-				
-		}else{
-		?>
-		<div class="item-option" title="Registrate"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-		<div class="item-option" title="Ingresar"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
-		<?php	
-		}
-		?>
-		</div>
-		
-	</header>
+<?php include("diseños/header.php"); ?>
 	<div class="main-content">
 		<div class="content-page"><br><br>  
         <form action="servicios/publicacion.php" method="POST" enctype="multipart/form-data">
@@ -118,6 +89,7 @@ form p{
 			</div>
 		</div>
 	</div>
+    <script type= "text/javascript" src="js/main-scripts.js"></script>
 	<script type="text/javascript">
     </script>
 </body>

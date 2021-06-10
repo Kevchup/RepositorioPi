@@ -15,12 +15,10 @@ history.forward()
 </head>
 
 <body>
-	
-<?php include("diseños/header.php"); ?>
-
+	<?php include("diseños/header.php"); ?>
 	<div class="main-content">
 		<div class="content-page">
-			<div class="title-section">Productos destacados</div>
+			<div class="title-section">Resultados para <strong>"<?php echo $_GET['text']; ?>"</strong></div>
 			
 			<div class="products-list" id="space-list">
 				
@@ -29,11 +27,14 @@ history.forward()
 	</div>
 	<script type= "text/javascript" src="js/main-scripts.js"></script>
 	<script type="text/javascript">
+        var x="<?php echo $_GET['text']; ?>";
         $(document).ready(function(){
         $.ajax({
-            url: 'servicios/publicaciones/traerpubli.php',
+            url: 'servicios/publicaciones/allresul.php',
             Type: 'POST',
-            data:{},
+            data:{
+                text:x
+            },
             success:function(data){
                 console.log(data); 
                 let html='';
@@ -48,10 +49,15 @@ history.forward()
                             '<div class="detail-price">'+data.datos[i].cantidad+' kg</div>'+
                         '</div>'+
 					'</a>'+
-				'</div>';  
+				'</div>'; 
                     
                 }
-               document.getElementById("space-list").innerHTML=html; 
+                if(html==''){
+                    document.getElementById("space-list").innerHTML="No hay resultados"; 
+                }else{
+                     document.getElementById("space-list").innerHTML=html; 
+                }
+              
 			    
             },
             error:function(err){

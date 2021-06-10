@@ -59,15 +59,15 @@ form p{
 		<div class="content-page">
 			<form action="servicios/register.php" method="POST">
                 <h3>LLENA LOS CAMPOS PARA TU REGISTRO</h3>
-                <input type="text" name="ID_U" placeholder="Cedula" pattern="[0-9]{6,10}" title="La cedula debe ser solo números y tener una longitud máxima de 10 caracteres" required>
+                <input type="text" name="ID_P" placeholder="Cedula" pattern="[0-9]{6,10}" title="La cedula debe ser solo números y tener una longitud máxima de 10 caracteres" required>
                 <input type="text" name="nombre" placeholder="Nombres" pattern="[a-zA-Z- ]{1,50}" title="En el nombre solo debe poner letras y tener una longitud máxima de 50 caracteres" required>
                 <input type="text" name="apellido" placeholder="Apellidos" pattern="[a-zA-Z- ]{1,50}" title="En el apellido solo debe poner letras y tener una longitud máxima de 50 caracteres" required>
                 <input type="text" name="telefono" placeholder="Teléfono">
                 <input type="text" name="email" placeholder="Email">
                 <input type="text" name="contraseña" placeholder="Contraseña">
-                Tipo De Usuario  <select id="Lista"  name="Lista">
-                    <option>Productor</option>
-                    <option>Cliente</option>
+                Tipo De Usuario  <select id="tipo"  name="tipo">
+                    <option value="Productor">Productor </option>
+                    <option value="Cliente">Cliente </option>
                 </select>  
                 <button type="submit">Registrate</button>
             </form>
