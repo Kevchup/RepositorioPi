@@ -5,7 +5,7 @@ if (!isset($_SESSION['ID_P'])) {
 }
 ?>
 <SCRIPT LANGUAGE="JavaScript">
-//POR QUE HPTAS NO FUNCIONA!
+//history.forward() //para el no retorno a la pagina anterior
 </SCRIPT>
 <!DOCTYPE html>
 <html>
