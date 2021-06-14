@@ -5,7 +5,7 @@ if (!isset($_SESSION['ID_P'])) {
 }
 ?>
 <SCRIPT LANGUAGE="JavaScript">
-//history.forward()
+//historyforward()
 </SCRIPT>
 <!DOCTYPE html>
 <html>
@@ -47,7 +47,7 @@ if (!isset($_SESSION['ID_P'])) {
 						'<div class="product">'+
 							'<img src="imagenes/'+data.datos[i].imagen+'">'+
 							'<div class="detail-title">'+data.datos[i].titulo+'</div>'+
-							'<div class="detail-description">'+"Publicado el "+data.datos[i].fecha+'</div>'+
+							'<div class="detail-description">'+"Publicado en "+data.datos[i].fecha+'</div>'+
                             '<div class="detail-price">'+data.datos[i].cantidad+' kg</div>'+
                         '</div>'+
 					'</a>'+
