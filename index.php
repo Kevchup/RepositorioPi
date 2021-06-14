@@ -1,8 +1,11 @@
 <?php
 session_start();
+if (!isset($_SESSION['ID_P'])) {
+    header("location: login.php");
+}
 ?>
 <SCRIPT LANGUAGE="JavaScript">
-history.forward()
+//history.forward()
 </SCRIPT>
 <!DOCTYPE html>
 <html>
