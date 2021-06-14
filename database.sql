@@ -21,13 +21,13 @@ CREATE TABLE producto(
 	CONSTRAINT pk_producto
 	PRIMARY KEY (codigo),
 	CONSTRAINT fk_producto
-	FOREIGN KEY (ID) REFERENCES productor (ID)	
+	FOREIGN KEY (ID) REFERENCES usuario (ID)	
 )
 
 	
 CREATE TABLE tipou(
 	ID int (11) not null,
 	nombre varchar(40) null,
-	CONSTRAINT pk_productor
+	CONSTRAINT pk_usuario
 	PRIMARY KEY (ID)
 )
