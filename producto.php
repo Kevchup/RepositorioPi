@@ -4,6 +4,8 @@ if (!isset($_SESSION['ID_P'])) {
     header("location: login.php");
 }
 ?>
+
+</SCRIPT>
 <!DOCTYPE html>
 <html>
 <head>

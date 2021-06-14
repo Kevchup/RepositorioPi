@@ -79,7 +79,7 @@ form p{
                 <center><h3>Ingresa los datos</h3></center>
                 <input type="text" REQUIRED name="titulo" placeholder="Título">
                 <I><input type="text" REQUIRED name="descrip" placeholder="Descripción" required size="500"></I>
-                <input type="text" REQUIRED name="cantidad" placeholder="Cantidad"  min="1" pattern="[0-9]{1,10}" title="La cantidad solo debe contener numeros y debe ser mayores a cero" required>
+                <input type="text" REQUIRED name="cantidad" placeholder="Cantidad">
                 <?php
                 date_default_timezone_set('America/Bogota');
                 $fecha=date("Y-m-d H:i:s");
