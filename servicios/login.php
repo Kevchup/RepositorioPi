@@ -4,7 +4,7 @@
 //3. contraseña incorrecta
 include('_conexion.php');
 $email=$_POST['email'];
-$sql="SELECT * FROM productor WHERE email='$email'";
+$sql="SELECT * FROM usuario WHERE email='$email'";
 $result=mysqli_query($con,$sql);
 if($result){
     $row=mysqli_fetch_array($result);
@@ -15,7 +15,7 @@ if($result){
             header('location: ../login.php?e=3');            
         }else{
             session_start();
-            $_SESSION['ID_P']=$row['ID_P'];
+            $_SESSION['ID']=$row['ID'];
             $_SESSION['email']=$row['email'];
             $_SESSION['nombre']=$row['nombre'];
             $_SESSION['telefono']=$row['telefono'];

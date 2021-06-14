@@ -1,6 +1,6 @@
 <?php
 session_start();   
-if (!isset($_SESSION['ID_P'])) {
+if (!isset($_SESSION['ID'])) {
     header("location: login.php");
 } 
 ?>
@@ -74,7 +74,7 @@ form p{
 	<div class="main-content">
 		<div class="content-page"><br><br>  
         <form action="servicios/publicacion.php" method="POST" enctype="multipart/form-data">
-                <input type="hidden" REQUIRED name="ID_P" value="<?=$_SESSION['ID_P']?>" readonly>
+                <input type="hidden" REQUIRED name="ID" value="<?=$_SESSION['ID']?>" readonly>
                 <center><h2>Ingresa los datos</h2></center><br>
                 <input type="text" REQUIRED name="titulo" placeholder="Título">
                 <I><input type="text" REQUIRED name="descrip" placeholder="Descripción" required size="500"></I>

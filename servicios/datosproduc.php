@@ -7,7 +7,7 @@ $datos=[];
 $i=0;
 $ced = $_GET['ced'];
 
-$sql="select * from productor where ID_P = '$ced'";
+$sql="select * from usuario where ID = '$ced'";
 $result=mysqli_query($con,$sql);
 while($row=mysqli_fetch_array($result)){
     $obj=new stdClass();

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $response=new stdClass();
-if(!isset($_SESSION['ID_P'])){
+if(!isset($_SESSION['ID'])){
     $response->state=false;
     $response->detail="No esta logeado";
     $response->open_log=true;

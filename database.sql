@@ -27,7 +27,7 @@ CREATE TABLE producto(
 	
 CREATE TABLE tipou(
 	ID int (11) not null,
-	nombre varchar(40) null,
+	tipo varchar(20) null,
 	CONSTRAINT pk_usuario
 	PRIMARY KEY (ID)
 )

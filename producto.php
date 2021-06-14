@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['ID_P'])) {
+if (!isset($_SESSION['ID'])) {
     header("location: login.php");
 }
 ?>
@@ -115,7 +115,7 @@ if (!isset($_SESSION['ID_P'])) {
               
                 for(var i = 0; i < data.datos.length; i++){ 
                     
-                 ced=data.datos[i].ID_P;   
+                 ced=data.datos[i].ID;   
              
                 }
               
@@ -127,7 +127,7 @@ if (!isset($_SESSION['ID_P'])) {
         }
  
     });     
-            cedulapro = '<?php echo $_SESSION['ID_P'];?>';
+            cedulapro = '<?php echo $_SESSION['ID'];?>';
              console.log(cedulapro);    
             return cedulapro; 
         }

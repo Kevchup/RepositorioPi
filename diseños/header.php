@@ -6,7 +6,7 @@
 		</div>
 		<div class="options-place">
 		<?php
-		if(isset($_SESSION['ID_P'])){
+		if(isset($_SESSION['ID'])){
 			
 			echo 
 			'<div class="item-option"><i class="fa fa-user-circle-o" aria-hidden="true"><a href="publicacion.php"></i>
