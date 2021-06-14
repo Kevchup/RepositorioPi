@@ -74,9 +74,8 @@ form p{
 	<div class="main-content">
 		<div class="content-page"><br><br>  
         <form action="servicios/publicacion.php" method="POST" enctype="multipart/form-data">
-                <center><h3>Tu documento</h3></center>
-                <input type="text" REQUIRED name="ID_P" value="<?=$_SESSION['ID_P']?>" readonly>
-                <center><h3>Ingresa los datos</h3></center>
+                <input type="hidden" REQUIRED name="ID_P" value="<?=$_SESSION['ID_P']?>" readonly>
+                <center><h2>Ingresa los datos</h2></center><br>
                 <input type="text" REQUIRED name="titulo" placeholder="Título">
                 <I><input type="text" REQUIRED name="descrip" placeholder="Descripción" required size="500"></I>
                 <input type="text" REQUIRED name="cantidad" placeholder="Cantidad">
@@ -84,9 +83,9 @@ form p{
                 date_default_timezone_set('America/Bogota');
                 $fecha=date("Y-m-d H:i:s");
                 ?>
-               <center><h3>Fecha actual </h3></center>
-                <input type="datetime" name="fecha" value="<?=$fecha?>" readonly>
-                <input type="file" REQUIRED name="imagen">
+               <center><h3>Sube tu imagen </h3></center>
+                <input type="hidden" name="fecha" value="<?=$fecha?>" readonly>
+                <input type="file" REQUIRED name="imagen" accept="image/png, .jpeg, .jpg, image/gif">
                 <button type="submit">Publicar</button>
             </form>
 			</div>
