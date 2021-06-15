@@ -10,11 +10,8 @@
 			
 			echo 
 			'<div class="item-option"><i class="fa fa-user-circle-o" aria-hidden="true"><a href="publicacion.php"></i>
-			<p>'.$_SESSION['nombre'].'</a></p>
-			
-			</div>'
+			<p>'.$_SESSION['nombre'].'</a></p></div>'
 			;
-			
 			echo '<div class="item-option" title="CERRAR SESION"><a href="login.php">
 			<i class="fa fa-sign-out" aria-hidden="true"></i></a></div>
 			';
